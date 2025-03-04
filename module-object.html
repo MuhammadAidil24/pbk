@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-object</title>
+  </head>
+  <body>
+    <script type="module">
+      import * as aidil from "./script/module-object.js";
+
+      console.info(aidil.firstname);
+      console.info(aidil.midlename);
+      console.info(aidil.lastname);
+      aidil.hello();
+
+      const person = new aidil.Person();
+      console.info(person.name);
+    </script>
+  </body>
+</html>
